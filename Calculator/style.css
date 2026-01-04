@@ -1,0 +1,21 @@
+.buttons {
+  display: grid;                  
+  grid-template-columns: repeat(4, 200px); 
+  grid-template-rows: repeat(4, 100px);                               
+  background-color: white;
+}
+
+button {
+  border: 0px;
+  background-color: rgb(109, 209, 96);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #24945c;
+}
+
+#result {
+  grid-column: 1 / 5;
+}

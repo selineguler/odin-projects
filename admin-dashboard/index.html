@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__brand">
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">☰</button>
+        <span class="brand-text">Dashboard</span>
+      </div>
+
+      <nav class="nav">
+        <a class="nav__item active" href="#"><span class="nav__icon">🏠</span><span class="nav__text">Home</span></a>
+        <a class="nav__item" href="#"><span class="nav__icon">👤</span><span class="nav__text">Profile</span></a>
+        <a class="nav__item" href="#"><span class="nav__icon">✉️</span><span class="nav__text">Messages</span></a>
+        <a class="nav__item" href="#"><span class="nav__icon">🕓</span><span class="nav__text">History</span></a>
+        <a class="nav__item" href="#"><span class="nav__icon">🗒️</span><span class="nav__text">Tasks</span></a>
+        <a class="nav__item" href="#"><span class="nav__icon">👥</span><span class="nav__text">Communities</span></a>
+
+        <div class="nav__section"></div>
+
+        <a class="nav__item" href="#"><span class="nav__icon">⚙️</span><span class="nav__text">Settings</span></a>
+        <a class="nav__item" href="#"><span class="nav__icon">❓</span><span class="nav__text">Support</span></a>
+        <a class="nav__item" href="#"><span class="nav__icon">🛡️</span><span class="nav__text">Privacy</span></a>
+      </nav>
+    </aside>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="search">
+        <svg class="search__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-4.3-4.3M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="search" placeholder="Search…" />
+      </div>
+
+      <div class="header__right">
+        <button class="icon-btn" aria-label="Notifications">🔔</button>
+        <div class="profile">
+          <img class="avatar" src="https://i.pravatar.cc/64?img=32" alt="Morgan Oakley avatar">
+          <div class="profile__txt">
+            <span class="hi">Hi there,</span>
+            <span class="name">Selin Guler <span class="handle">(@selinguler)</span></span>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="pill">New</button>
+          <button class="pill">Upload</button>
+          <button class="pill">Share</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="main">
+      <section class="projects">
+        <h2>Your Classes</h2>
+
+        <div class="cards">
+          <!-- Card -->
+          <article class="card">
+            <h3>Web Programming</h3>
+            <p></p>
+            <div class="card__actions">
+              <button title="Star">⭐</button>
+              <button title="Watch">👁️</button>
+              <button title="Idea">💡</button>
+            </div>
+          </article>
+
+          <article class="card accent">
+            <h3>Artificial Intelligence</h3>
+            <p></p>
+            <div class="card__actions">
+              <button>⭐</button><button>👁️</button><button>💡</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Organic Optoelectronics</h3>
+            <div class="card__actions">
+              <button>⭐</button><button>👁️</button><button>💡</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Optical Spectroscopy</h3>
+            
+            <div class="card__actions">
+              <button>⭐</button><button>👁️</button><button>💡</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>World of Particles</h3>
+           
+            <div class="card__actions">
+              <button>⭐</button><button>👁️</button><button>💡</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Data Analysis Methods</h3>
+            
+            <div class="card__actions">
+              <button>⭐</button><button>👁️</button><button>💡</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Right column -->
+    <aside class="right">
+      <section class="panel">
+        <h2>Announcements</h2>
+        <div class="panel__card">
+          <h4>Assignment 3.1</h4>
+          <p> Laplace smoothing of training data...</p>
+          <hr>
+          <h4>Assisgnment 3.2</h4>
+          <p>Source code classifier...</p>
+          <hr>
+          <h4>Assignment 3.3</h4>
+          <p>GMM-based and spectral clustering…</p>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Teams</h2>
+        <div class="panel__card">
+          <div class="trend">
+            <img class="avatar small" src="https://i.pravatar.cc/40?img=12" alt="">
+            <div><div class="handle">@tegan</div><div class="muted">World of Particles</div></div>
+          </div>
+          <div class="trend">
+            <img class="avatar small" src="https://i.pravatar.cc/40?img=32" alt="">
+            <div><div class="handle">@morgan</div><div class="muted">Organic Optoelectronics Project</div></div>
+          </div>
+          <div class="trend">
+            <img class="avatar small" src="https://i.pravatar.cc/40?img=7" alt="">
+            <div><div class="handle">@kendall</div><div class="muted">Life Changing App</div></div>
+          </div>
+          <div class="trend">
+            <img class="avatar small" src="https://i.pravatar.cc/40?img=3" alt="">
+            <div><div class="handle">@alex</div><div class="muted">No Traffic Maker</div></div>
+          </div>
+        </div>
+      </section>
+    </aside>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

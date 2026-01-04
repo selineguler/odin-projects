@@ -1,0 +1,46 @@
+body {
+  margin: 0 auto;
+}
+
+.container {
+  background: #ffffff;
+  width: 100%;
+}
+
+:root {
+  /* default value, will override on #container */
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+#box {
+  display: grid;
+  width: 2000px;                 /* fixed container width */
+  height: 2000px; 
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+
+}
+
+.grid-item {
+
+  flex: 0 0 calc(100% / 16);      /* one row = 16 columns */
+  aspect-ratio: 1 / 1;            /* I removed height-width info to get a better aligning */
+  border: 0px;
+  text-align: center;
+}
+
+.grid-item:hover {
+  background-color: red;
+}
+
+button {
+  display: block;        /* make sure it's treated as a block element */
+  width: 800px;
+  margin: 0 auto;        /* centers horizontally */
+  background: #f1c3c3;
+  height: 200px;
+  border: 50px solid white;
+  font-size: 20px;
+  text-align: center;
+}

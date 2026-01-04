@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Header */
+.header {
+  background-color: #1F2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.header-logo {
+  color: #F9FAF8;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-links a {
+  color: #E5E7EB;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.dark-bg {
+  background-color: #1F2937;
+  padding: 60px 80px;
+  display: flex;                /* place text and image side by side */
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1; /* text takes half space */
+}
+
+.hero-image img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px; /* optional */
+}
+
+/* Hero main text */
+.hero-main {
+  font-size: 48px;
+  font-weight: 800;
+  color: #F9FAF8;
+}
+
+/* Hero secondary text */
+.hero-secondary {
+  font-size: 18px;
+  color: #E5E7EB;
+  max-width: 600px;
+}
+
+.info {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.info-header {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1F2937;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;              /* space between items */
+  flex-wrap: nowrap;      /* force them to stay in one row */
+}
+
+.card {
+  text-align: center;
+  color: #4b5563;
+  max-width: 200px;
+}
+
+.card img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;       /* crop & fit into square */
+  border: 3px solid #3882F6;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+/* Quote section */
+.quote-section {
+  background-color: #E5E7EB;
+  padding: 60px 120px;
+}
+.quote-text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  color: #1F2937;
+}
+.quote-author {
+  text-align: right;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+
+/* Call-to-action */
+.cta {
+  background-color: #3882F6;
+  color: #F9FAF8;
+  padding: 20px;
+  margin: 40px;
+  text-align: center;
+}
+.cta button {
+  background-color: #F9FAF8;
+  color: #3882F6;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}

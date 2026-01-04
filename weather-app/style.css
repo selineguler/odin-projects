@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e5e5e5;
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+#loading {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Weather-based backgrounds */
+.hot {
+    background: #ffb199;
+}
+
+.cold {
+    background: #b4d3f9;
+}
+
+.normal {
+    background: #d6f7d6;
+}
+

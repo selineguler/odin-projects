@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>📚 My Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📚 My Library</h1>
+
+  <button id="newBookBtn">➕ New Book</button>
+
+  <!-- Dialog (popup form) -->
+  <dialog id="bookDialog">
+    <form id="bookForm" method="dialog">
+      <h3>Add a New Book</h3>
+
+      <label>
+        Title:<br>
+        <input type="text" id="title" placeholder="Enter book title" required>
+      </label><br><br>
+
+      <label>
+        Author:<br>
+        <input type="text" id="author" placeholder="Enter author name" required>
+      </label><br><br>
+
+      <label>
+        Pages:<br>
+        <input type="number" id="pages" placeholder="Enter number of pages" required>
+      </label><br><br>
+
+      <label>
+        <input type="checkbox" id="read"> Already read
+      </label><br><br>
+
+      <div class="form-buttons">
+        <button type="submit">Add Book</button>
+        <button type="button" id="closeDialog">Cancel</button>
+      </div>
+    </form>
+  </dialog>
+
+  <h2>📋 Table View</h2>
+  <table id="libraryTable">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Pages</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+
+  <script src="index.js" defer></script>
+</body>
+</html>

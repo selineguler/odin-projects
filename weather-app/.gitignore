@@ -1,0 +1,27 @@
+"# Node dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+
+# Env / Keys (even if not used here)
+.env
+.env.local
+.env.*.local
+
+# VS Code settings
+.vscode/
+
+# Cache
+.cache/
+.parcel-cache/
+

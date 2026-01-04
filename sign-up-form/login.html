@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Login | Physics Registration</title>
+</head>
+<body>
+
+  <div class="everything">
+    <div class="left">
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Desy_logo_3c_web.svg/1200px-Desy_logo_3c_web.svg.png" alt="Logo">
+    </div>
+
+    <div class="right">
+      <div class="motive">
+        <h2>DESY Summer Student Programme 2026</h2>
+        <p class="intro">
+          Please log in using the name and password you registered with to see if you are accepted.
+        </p>
+        <p class="apply">We’re excited to have you explore the frontiers of physics again!</p>
+      </div>
+
+      <div class="content">
+        <input type="text" id="login-name" placeholder="First Name">
+        <input type="password" id="login-password" placeholder="Password">
+      </div>
+
+      <div class="create">
+        <button id="login-btn">Login</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("login-btn").addEventListener("click", function () {
+      const name = document.getElementById("login-name").value.trim();
+      const password = document.getElementById("login-password").value.trim();
+
+      if (!name || !password) {
+        alert("Please enter both fields.");
+        return;
+      }
+
+      const storedUser = JSON.parse(localStorage.getItem("registeredUser"));
+
+      if (!storedUser) {
+        alert("No registered user found. Please sign up first.");
+        window.location.href = "index.html";
+        return;
+      }
+
+      if (storedUser.name === name && storedUser.password === password) {
+        alert(`Dear, ${storedUser.name}!
+
+            Thank you for your application, which was fully reviewed and considered to be of a high standard.
+
+            However, the number of high-quality applications received far exceeded the capacity of the programme, and so we are unfortunately unable to offer you a place this year.
+
+            In case you still fulfil the eligibility criteria next year, we would welcome your application for the 2026 programme.
+
+            We wish you good luck for your future career!
+
+            Kind regards,
+            The DESY summer student coordinating team`);
+      } else {
+        alert("Incorrect name or password. Please try again.");
+      }
+    });
+  </script>
+
+</body>
+</html>

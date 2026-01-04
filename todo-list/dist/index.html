@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Todo List</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div id="app">
+      <aside class="sidebar">
+        <h1>My Todos</h1>
+        <ul id="project-list"></ul>
+        <button id="add-project-btn" class="primary-btn">+ New Project</button>
+      </aside>
+
+      <main class="main">
+        <header class="main-header">
+          <h2 id="current-project-title">Inbox</h2>
+        </header>
+
+        <section class="actions">
+          <button id="add-todo-btn" class="primary-btn">+ New Todo</button>
+        </section>
+
+        <section id="todo-list" class="todo-list"></section>
+      </main>
+    </div>
+
+    <!-- Simple modal for creating/editing todos -->
+    <div id="todo-modal" class="modal hidden">
+      <div class="modal-content">
+        <h3 id="todo-modal-title">New Todo</h3>
+        <form id="todo-form">
+          <label>
+            Title
+            <input type="text" id="todo-title" required />
+          </label>
+
+          <label>
+            Description
+            <textarea id="todo-description"></textarea>
+          </label>
+
+          <label>
+            Due date
+            <input type="date" id="todo-dueDate" />
+          </label>
+
+          <label>
+            Priority
+            <select id="todo-priority">
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+          </label>
+
+          <div class="modal-actions">
+            <button type="submit" class="primary-btn">Save</button>
+            <button type="button" id="todo-cancel-btn" class="secondary-btn">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
